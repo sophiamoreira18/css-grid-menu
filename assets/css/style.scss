@@ -3,3 +3,16 @@
 @import"menu";
 @import"vars";
 @import"grid";
+
+.pai {
+    .filho {
+        background-color: cadetblue;
+
+    }
+    .filha {
+        background-color: cornflowerblue;
+        &.rebelde{
+            background-color: darkseagreen;
+        }
+    }
+}

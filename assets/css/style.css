@@ -86,4 +86,14 @@ table {
   .container .coluna {
     flex-basis: 100%;
   }
+}
+
+.pai .filho {
+  background-color: cadetblue;
+}
+.pai .filha {
+  background-color: cornflowerblue;
+}
+.pai .filha.rebelde {
+  background-color: darkseagreen;
 }/*# sourceMappingURL=style.css.map */
