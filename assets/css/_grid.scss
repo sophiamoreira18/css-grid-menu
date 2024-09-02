@@ -1,0 +1,41 @@
+.container{
+    max-width: 1200px;//centraliza
+    
+    margin-left: auto;
+    margin-right: auto;// ou margin: 0 auto; 0=x auto=y
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(22, 78, 62);// ou border: 1px solid red;
+
+    display: flex;
+    flex-wrap: wrap;
+    .coluna{
+        border: 1px solid red;
+        // a largura deste elemento
+        // deve levar em consideração a borda
+        // computadata por dentro
+        flex-basis: 50%;
+        box-sizing: border-box;
+
+        &.coluna-3 {
+          
+            flex-basis: 25%;
+            @media (min-width: 768px) and (max-width: 1024px) {
+                flex-basis: 50%;
+              }
+              @media (max-width:768px){
+                flex-basis: 100%;
+              }
+            }
+
+
+        @media (max-width:768px){
+            flex-basis: 100%;
+        }// quando a tela tiver um tamanho máximo de 768px
+        // isto é, uma tela pequena,
+        // a coluna deve ocupar 100% da largura
+    }
+}
